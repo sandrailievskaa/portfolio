@@ -23,7 +23,7 @@
                 <iconify-icon icon="tabler:brand-github" width="16" height="16" aria-hidden="true"></iconify-icon>
                 GitHub
             </a>
-            <a href="{{ $portfolio['contact']['resume'] }}" download class="btn-glow inline-flex items-center gap-2 rounded-full px-6 py-3 font-mono text-xs uppercase tracking-wide text-paper-muted hover:text-signal-amber">
+            <a href="{{ asset($portfolio['contact']['resume']) }}" download class="btn-glow inline-flex items-center gap-2 rounded-full px-6 py-3 font-mono text-xs uppercase tracking-wide text-paper-muted hover:text-signal-amber">
                 <iconify-icon icon="tabler:download" width="14" height="14" aria-hidden="true"></iconify-icon>
                 Download résumé
             </a>

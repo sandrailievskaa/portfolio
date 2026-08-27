@@ -288,7 +288,7 @@ return [
         'linkedin_url' => 'https://linkedin.com/in/sandra-ilievska',
         'github' => 'github.com/sandrailievskaa',
         'github_url' => 'https://github.com/sandrailievskaa',
-        'resume' => '/resume.pdf',
+        'resume' => 'resume.pdf',
     ],
 
 ];

@@ -21,7 +21,7 @@
         <div id="nav-spy" data-props='@json(['sections' => $portfolio['nav']])'></div>
 
         <a
-            href="{{ $portfolio['contact']['resume'] }}"
+            href="{{ asset($portfolio['contact']['resume']) }}"
             download
             class="btn-glow hidden items-center gap-2 rounded-full border border-ink-500 px-4 py-2 font-mono text-xs uppercase tracking-wide text-paper-muted hover:border-accent-blue hover:text-paper sm:inline-flex"
         >
