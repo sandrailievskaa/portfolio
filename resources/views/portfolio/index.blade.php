@@ -8,6 +8,9 @@
     <meta property="og:title" content="{{ $portfolio['meta']['name'] }} — {{ $portfolio['meta']['title'] }}">
     <meta property="og:description" content="{{ $portfolio['meta']['hook'] }}">
     <meta property="og:type" content="website">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
     <script defer src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
