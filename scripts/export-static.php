@@ -21,6 +21,7 @@ $response = $kernel->handle($request);
 
 if ($response->getStatusCode() !== 200) {
     fwrite(STDERR, "Export failed: route returned status {$response->getStatusCode()}\n");
+    fwrite(STDERR, $response->getContent()."\n");
     exit(1);
 }
 

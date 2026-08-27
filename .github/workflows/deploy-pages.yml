@@ -41,8 +41,10 @@ jobs:
       - name: Install Node dependencies
         run: npm ci
 
-      - name: Generate a build-time app key
-        run: echo "APP_KEY=base64:$(openssl rand -base64 32)" >> "$GITHUB_ENV"
+      - name: Prepare Laravel environment
+        run: |
+          cp .env.example .env
+          php artisan key:generate --force
 
       - name: Build frontend assets
         run: npm run build
@@ -52,6 +54,10 @@ jobs:
         env:
           APP_ENV: production
           APP_DEBUG: true
+          SESSION_DRIVER: array
+          CACHE_STORE: array
+          QUEUE_CONNECTION: sync
+          LOG_CHANNEL: stderr
 
       - name: Assemble static assets
         run: |
